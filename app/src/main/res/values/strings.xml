@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Rules of the Road</string>
+    <string name="default_text">The Quick Brown Fox jumped over the lazy dog.</string>
+
+    //Question 1
+    <string name="question_1">What light has an arc of visibility of 112 degrees?</string>
+    <string name="chaff_1_1">Forward masthead light.</string>
+    <string name="answer_1_1">Port running light.</string>
+    <string name="chaff_1_2">Stern Light.</string>
+    <string name="answer_1_2">Starboard running ligth.</string>
+
+    //Question 2
+    <string name="question_2">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
+    <string name="answer_2">She has the right of way only if she is power-driven.</string>
+    <string name="chaff_2_1">She must wait for a whistle signal from the upbound vessel.</string>
+    <string name="chaff_2_2">Neither vessel has the right of way.</string>
+    <string name="chaff_2_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+
+    //Question 3
+    <string name="question_3">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
+    <string name="answer_3">She has the right of way only if she is power-driven.</string>
+    <string name="chaff_3_1">She must wait for a whistle signal from the upbound vessel.</string>
+    <string name="chaff_3_2">Neither vessel has the right of way.</string>
+    <string name="chaff_3_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+
+    //Question 4
+    <string name="question_4">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
+    <string name="answer_4">She has the right of way only if she is power-driven.</string>
+    <string name="chaff_4_1">She must wait for a whistle signal from the upbound vessel.</string>
+    <string name="chaff_4_2">Neither vessel has the right of way.</string>
+    <string name="chaff_4_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+
+    //Question 5
+    <string name="question_5">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
+    <string name="answer_5">She has the right of way only if she is power-driven.</string>
+    <string name="chaff_5_1">She must wait for a whistle signal from the upbound vessel.</string>
+    <string name="chaff_5_2">Neither vessel has the right of way.</string>
+    <string name="chaff_5_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+</resources>
