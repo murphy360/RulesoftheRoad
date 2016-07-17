@@ -26,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
+    /**
+     *
+     * @return is question 1 correct
+     */
     private boolean scoreQuestion1(){
         CheckBox cb1 = (CheckBox) findViewById(R.id.checkBox1);//Correct
         CheckBox cb2 = (CheckBox) findViewById(R.id.checkBox2);
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      *
-     * @return true is radioButton1 is checked on UI
+     * @return is question 2 correct
      */
     private boolean scoreQuestion2(){
         RadioButton rd1 = (RadioButton) findViewById(R.id.radioButton1);
@@ -49,15 +52,23 @@ public class MainActivity extends AppCompatActivity {
         return rd1.isChecked();
     }
 
+    /**
+     *
+     * @return is question 3 correct
+     */
     private boolean scoreQuestion3(){
         EditText et = (EditText) findViewById(R.id.questionEditText3);
         int test = 1;
-        if(et.getText().toString().equals("1")){ //// TODO: 7/17/2016 How to compare string values?
+        if(et.getText().toString().equals("1")){ //Compares user input to "1"
             return true;
         }
         return false;
     }
 
+    /**
+     *
+     * @return is question 4 correct
+     */
     private boolean scoreQuestion4() {
 
         CheckBox cb1 = (CheckBox) findViewById(R.id.checkBox13);//Correct
@@ -71,12 +82,21 @@ public class MainActivity extends AppCompatActivity {
         return answer;
     }
 
+    /**
+     *
+     * @return is question 5 correct
+     */
     private boolean scoreQuestion5(){
         RadioButton rb1 = (RadioButton) findViewById(R.id.radioButton2);//Correct if checked
         return rb1.isChecked();
     }
-    
+
+    /**
+     * Master method... calls everything else and puts it together for a final score.
+     * @param v This is called from the UI
+     */
     public void scoreQuiz(View v){
+        //Which questions have been answered correctly?
         boolean q1 = scoreQuestion1();
         boolean q2 = scoreQuestion2();
         boolean q3 = scoreQuestion3();
@@ -86,10 +106,12 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreText = (TextView) findViewById(R.id.answerText);
 
 
-        if(q1 & q2 & q3 & q4 & q5){
+        if(q1 & q2 & q3 & q4 & q5){//All Answers are correct
             scoreText.setText("Great Job! 100%");
         }else{
             EditText et = (EditText) findViewById(R.id.questionEditText3);
+
+            //Calculate # correct answers
             if(q1){
                 correct ++;
             }
@@ -105,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             if(q5){
                 correct ++;
             }
-            float score = (correct * 100) / 5;
+            float score = (correct * 100) / 5;//Get Percentage for score correct
             scoreText.setText("Question 1: " + boolToString(q1)
                     + "\nQuestion 2: " + boolToString(q2)
                     + "\nQuestion 3: " + boolToString(q3)
