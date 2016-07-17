@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
     private boolean scoreQuestion3(){
         EditText et = (EditText) findViewById(R.id.questionEditText3);
         int test = 1;
-        if(et.getText().toString() == "1"){ //// TODO: 7/17/2016 How to compare string values? 
+        if(et.getText().toString().equals("1")){ //// TODO: 7/17/2016 How to compare string values?
             return true;
         }
         return false;
     }
 
-    private boolean scoreQuestion4(){
+    private boolean scoreQuestion4() {
 
         CheckBox cb1 = (CheckBox) findViewById(R.id.checkBox13);//Correct
         CheckBox cb2 = (CheckBox) findViewById(R.id.checkBox14);
@@ -70,27 +70,54 @@ public class MainActivity extends AppCompatActivity {
 
         return answer;
     }
+
+    private boolean scoreQuestion5(){
+        RadioButton rb1 = (RadioButton) findViewById(R.id.radioButton2);//Correct if checked
+        return rb1.isChecked();
+    }
     
     public void scoreQuiz(View v){
         boolean q1 = scoreQuestion1();
         boolean q2 = scoreQuestion2();
         boolean q3 = scoreQuestion3();
         boolean q4 = scoreQuestion4();
+        boolean q5 = scoreQuestion5();
+        float correct = 0;
         TextView scoreText = (TextView) findViewById(R.id.answerText);
-        if(q1 & q2 & q3 & q4){
-            scoreText.setText("100%");
+
+
+        if(q1 & q2 & q3 & q4 & q5){
+            scoreText.setText("Great Job! 100%");
         }else{
             EditText et = (EditText) findViewById(R.id.questionEditText3);
+            if(q1){
+                correct ++;
+            }
+            if(q2){
+                correct ++;
+            }
+            if(q3){
+                correct ++;
+            }
+            if(q4){
+                correct ++;
+            }
+            if(q5){
+                correct ++;
+            }
+            float score = (correct * 100) / 5;
             scoreText.setText("Question 1: " + boolToString(q1)
                     + "\nQuestion 2: " + boolToString(q2)
                     + "\nQuestion 3: " + boolToString(q3)
                     + "\nQuestion 4: " + boolToString(q4)
-                    + "\n" + et.getText().toString()//// TODO: 7/17/2016 Remove test line after figuring out problem 3 
+                    + "\nQuestion 5: " + boolToString(q5)
+                    + "\nTotal: " +  score + "%"
             );
         }
 
 
     }
+
 
     private String boolToString(boolean b){
 

@@ -27,6 +27,10 @@
     <string name="answer_4_2">Sailing Vessel.</string>
     <string name="answer_4_3">Engaged in Fishing.</string>
 
+    <string name="question_5">Which is the stand-on vessel?</string>
+
     <string name="submit_text">Answer all questions and hit this button to see your score.</string>
+    <string name="answer_5">Vessel A</string>
+    <string name="chaff_5">Vessel B</string>
 
 </resources>
