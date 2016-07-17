@@ -17,7 +17,7 @@
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             card_view:cardElevation="6dp"
             android:layout_marginBottom="4dp">
@@ -27,8 +27,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    style="@style/QuetionLinearLayout"
-                    android:layout_weight="2">
+                    style="@style/QuetionLinearLayout">
                     <TextView
                         android:id="@+id/questionText1"
                         style="@style/QuestionTextStyle"
@@ -40,38 +39,26 @@
 
 
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/answer_1_1"
-                        android:id="@+id/checkBox1"
-                        android:layout_weight="1"
-                        android:layout_gravity="center_vertical"/>
+                        android:id="@+id/checkBox1"/>
 
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/chaff_1_1"
-                        android:id="@+id/checkBox2"
-                        android:layout_weight="1"
-                        android:layout_gravity="center_vertical" />
+                        android:id="@+id/checkBox2" />
                 </LinearLayout>
                 <LinearLayout
                     style="@style/QuetionLinearLayout"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/answer_1_2"
-                        android:id="@+id/checkBox3"
-                        android:layout_weight="1"
-                        android:layout_gravity="center_vertical"/>
+                        android:id="@+id/checkBox3"/>
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/chaff_1_2"
-                        android:id="@+id/checkBox4"
-                        android:layout_weight="1"
-                        android:layout_gravity="center_vertical"/>
+                        android:id="@+id/checkBox4"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -104,25 +91,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioStyle"
                         android:text="@string/answer_2"
-                        android:id="@+id/radioButton1"
-                        android:checked="false" />
-
+                        android:id="@+id/radioButton1"/>
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioStyle"
                         android:text="@string/chaff_2_1"
                         android:id="@+id/checkBox6" />
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioStyle"
                         android:text="@string/chaff_2_2"
                         android:id="@+id/checkBox7"/>
                     <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/RadioStyle"
                         android:text="@string/chaff_2_3"
                         android:id="@+id/checkBox8"/>
 
@@ -165,18 +146,17 @@
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             card_view:cardCornerRadius="4dp"
             card_view:cardElevation="6dp"
             android:layout_marginBottom="4dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    style="@style/QuetionLinearLayout"
-                    android:layout_weight="2">
+                    style="@style/QuetionLinearLayout">
                     <TextView
                         style="@style/QuestionTextStyle"
                         android:text="@string/question_4"/>
@@ -187,38 +167,26 @@
 
 
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/answer_4_1"
-                        android:id="@+id/checkBox13"
-                        android:layout_weight="1"
-                        android:checked="false" />
+                        android:id="@+id/checkBox13"/>
 
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/chaff_4"
-                        android:id="@+id/checkBox14"
-                        android:layout_weight="1"
-                        android:checked="false" />
+                        android:id="@+id/checkBox14" />
                 </LinearLayout>
                 <LinearLayout
                     style="@style/QuetionLinearLayout"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/answer_4_2"
-                        android:id="@+id/checkBox15"
-                        android:layout_weight="1"
-                        android:checked="false" />
+                        android:id="@+id/checkBox15" />
                     <CheckBox
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        style="@style/CheckStyle"
                         android:text="@string/answer_4_3"
-                        android:id="@+id/checkBox16"
-                        android:layout_weight="1"
-                        android:checked="false" />
+                        android:id="@+id/checkBox16" />
                 </LinearLayout>
 
             </LinearLayout>
