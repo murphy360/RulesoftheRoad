@@ -107,7 +107,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/answer_2"
-                        android:id="@+id/checkBox5"
+                        android:id="@+id/radioButton1"
                         android:checked="false" />
 
                     <RadioButton
@@ -243,6 +243,7 @@
                 android:orientation="vertical">
                 <TextView
                     style="@style/QuestionTextStyle"
+                    android:id="@+id/answerText"
                     android:text="@string/submit_text"/>
 
                 <Button
@@ -251,7 +252,8 @@
                     android:text="Check Answers"
                     android:id="@+id/button"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="48dp" />
+                    android:layout_marginTop="48dp"
+                    android:onClick="scoreQuiz"/>
             </LinearLayout>
 
 
