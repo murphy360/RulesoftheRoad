@@ -17,23 +17,16 @@
     <string name="chaff_2_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
 
     //Question 3
-    <string name="question_3">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
-    <string name="answer_3">She has the right of way only if she is power-driven.</string>
-    <string name="chaff_3_1">She must wait for a whistle signal from the upbound vessel.</string>
-    <string name="chaff_3_2">Neither vessel has the right of way.</string>
-    <string name="chaff_3_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+    <string name="question_3">The sound signal for a power-driven vessel underway in fog is ____ short blast(s).</string>
+    <string name="answer_3">1</string>
 
     //Question 4
-    <string name="question_4">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
-    <string name="answer_4">She has the right of way only if she is power-driven.</string>
-    <string name="chaff_4_1">She must wait for a whistle signal from the upbound vessel.</string>
-    <string name="chaff_4_2">Neither vessel has the right of way.</string>
-    <string name="chaff_4_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+    <string name="question_4">1 Prolonged followed by 2 short blasts can be sounded by:</string>
+    <string name="chaff_4">Power Driven Vessel.</string>
+    <string name="answer_4_1">Not Under Command.</string>
+    <string name="answer_4_2">Sailing Vessel.</string>
+    <string name="answer_4_3">Engaged in Fishing.</string>
 
-    //Question 5
-    <string name="question_5">INLAND ONLY Which is TRUE of a vessel downbound with a following current when meeting an upbound vessel on the Western Rivers?</string>
-    <string name="answer_5">She has the right of way only if she is power-driven.</string>
-    <string name="chaff_5_1">She must wait for a whistle signal from the upbound vessel.</string>
-    <string name="chaff_5_2">Neither vessel has the right of way.</string>
-    <string name="chaff_5_3">She does not have the right of way, since the other vessel is not crossing the river.</string>
+    <string name="submit_text">Answer all questions and hit this button to see your score.</string>
+
 </resources>
